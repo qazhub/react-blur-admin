@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import cx from 'classnames';
 
 export class TableHead extends React.Component {
 
   static propTypes = {
-    blackMutedBackground: React.PropTypes.bool,
+    blackMutedBackground: PropTypes.bool,
   }
 
   static defaultProps = {

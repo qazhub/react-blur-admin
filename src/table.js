@@ -1,15 +1,16 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import cx from 'classnames';
 
 export class Table extends React.Component {
 
   static propTypes = {
-    hover: React.PropTypes.bool,
-    border: React.PropTypes.bool,
-    condense: React.PropTypes.bool,
-    stripe: React.PropTypes.bool,
-    responsive: React.PropTypes.bool,
-    style: React.PropTypes.object,
+    hover: PropTypes.bool,
+    border: PropTypes.bool,
+    condense: PropTypes.bool,
+    stripe: PropTypes.bool,
+    responsive: PropTypes.bool,
+    style: PropTypes.object,
   }
 
   static defaultProps = {

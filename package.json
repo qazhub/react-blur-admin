@@ -35,6 +35,7 @@
     "babel-cli": "^6.9.0",
     "classnames": "^2.2.5",
     "lodash": "^4.7.0",
+    "prop-types": "^15.6.2",
     "react-flex-proto": "^1.0.0"
   },
   "devDependencies": {
@@ -62,5 +63,8 @@
     "sinon": "^1.17.4",
     "uglifyjs": "^2.4.10",
     "webpack": "^1.13.1"
+  },
+  "volta": {
+    "node": "8.17.0"
   }
 }

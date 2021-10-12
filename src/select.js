@@ -1,27 +1,28 @@
 import _ from 'lodash';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 export class Select extends React.Component {
 
   static propTypes = {
-    placeholder: React.PropTypes.string,
-    maxHeight: React.PropTypes.string,
-    onChange: React.PropTypes.func,
-    onRenderValue: React.PropTypes.func,
-    options: React.PropTypes.arrayOf(
-      React.PropTypes.shape({
-        value: React.PropTypes.oneOfType([
-          React.PropTypes.string,
-          React.PropTypes.number,
+    placeholder: PropTypes.string,
+    maxHeight: PropTypes.string,
+    onChange: PropTypes.func,
+    onRenderValue: PropTypes.func,
+    options: PropTypes.arrayOf(
+      PropTypes.shape({
+        value: PropTypes.oneOfType([
+          PropTypes.string,
+          PropTypes.number,
         ]),
-        label: React.PropTypes.node,
+        label: PropTypes.node,
       }),
     ),
-    value: React.PropTypes.node,
-    isSearchable: React.PropTypes.bool,
-    isOpen: React.PropTypes.bool,
-    onSearch: React.PropTypes.func,
-    onToggleOpen: React.PropTypes.func, // used when the parent needs to know that isOpen was toggled
+    value: PropTypes.node,
+    isSearchable: PropTypes.bool,
+    isOpen: PropTypes.bool,
+    onSearch: PropTypes.func,
+    onToggleOpen: PropTypes.func, // used when the parent needs to know that isOpen was toggled
   }
 
   static defaultProps = {

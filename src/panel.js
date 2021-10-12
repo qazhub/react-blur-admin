@@ -1,12 +1,13 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 export class Panel extends React.Component {
 
   static propTypes = {
-    title: React.PropTypes.string,
-    className: React.PropTypes.string,
-    size: React.PropTypes.string,
-    withScroll: React.PropTypes.bool,
+    title: PropTypes.string,
+    className: PropTypes.string,
+    size: PropTypes.string,
+    withScroll: PropTypes.bool,
   }
 
   static defaultProps = {

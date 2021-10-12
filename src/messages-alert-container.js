@@ -1,12 +1,13 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 export class MessagesAlertContainer extends React.Component {
 
   static propTypes = {
-    mailCount: React.PropTypes.number.isRequired,
-    settingsOnClick: React.PropTypes.func,
-    allMessagesOnClick: React.PropTypes.func,
-    markAllAsReadOnClick: React.PropTypes.func,
+    mailCount: PropTypes.number.isRequired,
+    settingsOnClick: PropTypes.func,
+    allMessagesOnClick: PropTypes.func,
+    markAllAsReadOnClick: PropTypes.func,
   }
 
   constructor(props) {

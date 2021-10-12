@@ -1,14 +1,15 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 export class NotificationAlert extends React.Component {
 
   static propTypes = {
-    user: React.PropTypes.object,
-    subject: React.PropTypes.string,
-    createdAt: React.PropTypes.string,
-    onClick: React.PropTypes.func,
-    relativeTime: React.PropTypes.string,
-    timeStamp: React.PropTypes.string,
+    user: PropTypes.object,
+    subject: PropTypes.string,
+    createdAt: PropTypes.string,
+    onClick: PropTypes.func,
+    relativeTime: PropTypes.string,
+    timeStamp: PropTypes.string,
   }
 
   onClick() {

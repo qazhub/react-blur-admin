@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 export const Tab = ({ title, onClick }) => {
@@ -7,7 +8,7 @@ export const Tab = ({ title, onClick }) => {
 };
 
 Tab.propTypes = {
-  title: React.PropTypes.string,
-  onClick: React.PropTypes.func,
-  name: React.PropTypes.string,
+  title: PropTypes.string,
+  onClick: PropTypes.func,
+  name: PropTypes.string,
 };

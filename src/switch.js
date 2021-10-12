@@ -1,16 +1,17 @@
 import _ from 'lodash';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 export class Switch extends React.Component {
 
   static propTypes = {
-    isOn: React.PropTypes.bool,
-    onLabel: React.PropTypes.string,
-    offLabel: React.PropTypes.string,
-    onChange: React.PropTypes.func.isRequired,
-    type: React.PropTypes.oneOf(['primary', 'info', 'warning', 'success', 'danger']),
-    className: React.PropTypes.string,
-    disabled: React.PropTypes.bool,
+    isOn: PropTypes.bool,
+    onLabel: PropTypes.string,
+    offLabel: PropTypes.string,
+    onChange: PropTypes.func.isRequired,
+    type: PropTypes.oneOf(['primary', 'info', 'warning', 'success', 'danger']),
+    className: PropTypes.string,
+    disabled: PropTypes.bool,
   }
 
   static defaultProps = {

@@ -1,16 +1,17 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 export class EditableText extends React.Component {
 
   static propTypes = {
-    onChange: React.PropTypes.func.isRequired,
-    isOpen: React.PropTypes.bool,
-    onValidate: React.PropTypes.func,
-    value: React.PropTypes.node,
-    hasError: React.PropTypes.bool,
-    errorHelpLabel: React.PropTypes.string,
-    placeholder: React.PropTypes.string,
-    disabled: React.PropTypes.bool,
+    onChange: PropTypes.func.isRequired,
+    isOpen: PropTypes.bool,
+    onValidate: PropTypes.func,
+    value: PropTypes.node,
+    hasError: PropTypes.bool,
+    errorHelpLabel: PropTypes.string,
+    placeholder: PropTypes.string,
+    disabled: PropTypes.bool,
   }
 
   static defaultProps = {

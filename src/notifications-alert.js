@@ -1,12 +1,13 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 export class NotificationsAlert extends React.Component {
 
   static propTypes = {
-    notificationCount: React.PropTypes.number.isRequired,
-    settingsOnClick: React.PropTypes.func,
-    allNotificationsOnClick: React.PropTypes.func,
-    markAllAsReadOnClick: React.PropTypes.func,
+    notificationCount: PropTypes.number.isRequired,
+    settingsOnClick: PropTypes.func,
+    allNotificationsOnClick: PropTypes.func,
+    markAllAsReadOnClick: PropTypes.func,
   }
 
   constructor(props) {

@@ -1,14 +1,15 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 export class MessagesAlert extends React.Component {
 
   static propTypes = {
-    user: React.PropTypes.object,
-    subject: React.PropTypes.string,
-    createdAt: React.PropTypes.string,
-    onClick: React.PropTypes.func,
-    relativeTime: React.PropTypes.string,
-    timestamp: React.PropTypes.string,
+    user: PropTypes.object,
+    subject: PropTypes.string,
+    createdAt: PropTypes.string,
+    onClick: PropTypes.func,
+    relativeTime: PropTypes.string,
+    timestamp: PropTypes.string,
   }
 
   onClick() {

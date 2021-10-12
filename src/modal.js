@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import { Button } from './button';
@@ -5,15 +6,15 @@ import { Button } from './button';
 export class Modal extends React.Component {
 
   static propTypes = {
-    title: React.PropTypes.string,
-    buttonText: React.PropTypes.string,
-    className: React.PropTypes.string,
-    size: React.PropTypes.string,
-    icon: React.PropTypes.string,
-    align: React.PropTypes.string,
-    type: React.PropTypes.string,
-    onClose: React.PropTypes.func,
-    isOpen: React.PropTypes.bool,
+    title: PropTypes.string,
+    buttonText: PropTypes.string,
+    className: PropTypes.string,
+    size: PropTypes.string,
+    icon: PropTypes.string,
+    align: PropTypes.string,
+    type: PropTypes.string,
+    onClose: PropTypes.func,
+    isOpen: PropTypes.bool,
   }
 
   static defaultProps = {

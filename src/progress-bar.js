@@ -1,14 +1,15 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import cx from 'classnames';
 
 export class ProgressBar extends React.Component {
 
   static propTypes = {
-    type: React.PropTypes.oneOf(['success', 'primary', 'warning', 'danger']),
-    striped: React.PropTypes.bool,
-    animated: React.PropTypes.bool,
-    label: React.PropTypes.string,
-    percentage: React.PropTypes.number.isRequired,
+    type: PropTypes.oneOf(['success', 'primary', 'warning', 'danger']),
+    striped: PropTypes.bool,
+    animated: PropTypes.bool,
+    label: PropTypes.string,
+    percentage: PropTypes.number.isRequired,
   }
 
   static defaultProps = {
