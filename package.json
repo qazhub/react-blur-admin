@@ -36,7 +36,7 @@
     "classnames": "^2.2.5",
     "lodash": "^4.7.0",
     "prop-types": "^15.6.2",
-    "react-flex-proto": "^1.0.0"
+    "react-flex-proto": "github:bjspatel/react-flex-proto"
   },
   "devDependencies": {
     "babel-core": "^6.9.0",
